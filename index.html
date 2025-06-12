@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
     <title>Nebula - Your Content, Organized.</title>
     
     <!-- Bulma CSS Framework & Lux Theme -->
-    <!-- By loading the theme, we get both Bulma core and the Lux styles -->
     <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* The Lux theme handles its own font imports, so we don't need to import them separately. */
-        /* We can still add custom styles that don't conflict with the theme. */
+        /* The Lux theme handles its own font imports and background colors. */
 
         /* Hero Section Styling */
         .hero.is-fullheight {
@@ -25,7 +24,7 @@
             background-attachment: fixed; /* Creates a parallax effect */
         }
 
-        /* Add a subtle animation to the hero title */
+        /* Hero animation */
         .hero-title {
             animation: fadeInDown 1s ease-out;
         }
@@ -34,7 +33,7 @@
             animation-fill-mode: backwards;
         }
 
-        /* Styling for product cards */
+        /* Product card styling */
         .product-card {
             display: flex;
             flex-direction: column;
@@ -71,9 +70,13 @@
             color: hsl(204, 86%, 53%);
         }
 
-        /* Ensure Nebula brand name icon uses the theme's primary color */
+        /* Set meteor icon to a blue-green color */
         .navbar-brand .fa-meteor {
-             color: hsl(204, 86%, 53%) !important;
+             color: #25A5A5 !important;
+        }
+        
+        .footer .footer-links a {
+            margin: 0 10px;
         }
 
 
@@ -131,7 +134,7 @@
                     </a>
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-primary is-outlined">
+                            <a class="button is-primary">
                                 <strong>Sign up</strong>
                             </a>
                             <a class="button is-light">
@@ -152,7 +155,7 @@
                     Bring Order to Your Digital Universe
                 </p>
                 <p class="subtitle is-3 has-text-light mt-4 hero-subtitle">
-                    Nebula provides the tools to collect and consume the content that matters to you.
+                    Nebula provides the tools to manage your constellation of data.
                 </p>
             </div>
         </div>
@@ -162,8 +165,8 @@
     <section class="section is-medium" id="products">
         <div class="container">
             <div class="has-text-centered">
-                <h2 class="title is-2">Two Apps, One Cohesive Experience</h2>
-                <p class="subtitle is-5 has-text-grey-dark">Follow your favorite sources with News, and save anything for later with Reader.</p>
+                <h2 class="title is-2">Your Personal Cloud in Space</h2>
+                <p class="subtitle is-5 has-text-grey-dark">Our first two apps, News and Reader, form the foundation of your organized digital life.</p>
             </div>
             
             <div class="columns is-centered is-variable is-8 product-columns">
@@ -176,7 +179,7 @@
                             </div>
                             <p class="title is-3">News</p>
                             <p class="subtitle is-6">Your personal cosmos of content. News brings the universe of web feeds directly to you, organized and uncluttered.</p>
-                            <p class="has-text-grey">The intelligent feed reader that filters out the noise.</p>
+                            <p class="has-text-grey">Your content in chronological order. No algorithm, no noise.</p>
                         </div>
                         <footer class="card-footer">
                             <a href="#" class="card-footer-item has-text-weight-bold">Learn More</a>
@@ -207,11 +210,15 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>
-                <strong>Nebula</strong> by Space Bar Labs.
+            <p class="mb-4">
+                <i class="fa-solid fa-meteor has-text-primary"></i>
             </p>
             <p>
-                <i class="fa-solid fa-meteor has-text-primary"></i>
+                © 2025 <strong><a href="https://spacebarlabs.com" target="_blank">Space Bar Labs</a></strong>
+            </p>
+            <p class="footer-links">
+                <a href="https://spacebarlabs.com/privacy-policy/" target="_blank">Privacy Policy</a>
+                <a href="https://spacebarlabs.com/terms-of-service/" target="_blank">Terms of Service</a>
             </p>
         </div>
     </footer>
@@ -235,4 +242,3 @@
 
 </body>
 </html>
-
