@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula - Your Content, Organized.</title>
+    
+    <!-- Bulma CSS Framework & Lux Theme -->
+    <!-- By loading the theme, we get both Bulma core and the Lux styles -->
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* The Lux theme handles its own font imports, so we don't need to import them separately. */
+        /* We can still add custom styles that don't conflict with the theme. */
+
+        /* Hero Section Styling */
+        .hero.is-fullheight {
+            /* Image of the Carina Nebula from the James Webb Space Telescope */
+            background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://preview.redd.it/carina-nebula-through-james-webb-telescope-1920x1080-v0-3vdjg06c6cna1.jpg?auto=webp&s=1aa5893589936c68de97bd9f0e5890b33f777b66');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed; /* Creates a parallax effect */
+        }
+
+        /* Add a subtle animation to the hero title */
+        .hero-title {
+            animation: fadeInDown 1s ease-out;
+        }
+        .hero-subtitle {
+            animation: fadeInUp 1s ease-out 0.5s;
+            animation-fill-mode: backwards;
+        }
+
+        /* Styling for product cards */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid hsl(0, 0%, 93%); /* A subtle border to match the theme */
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+        
+        /* Custom margin for the product columns */
+        .product-columns {
+            margin-top: 4.5rem;
+        }
+
+        .navbar.is-fixed-top {
+            background-color: rgba(10, 10, 10, 0.85); /* Slightly darker for better contrast */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Ensure navbar text and brand title is readable and white */
+        .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title {
+             color: #fff;
+        }
+        .navbar-item a:hover {
+            color: hsl(204, 86%, 53%);
+        }
+
+        /* Ensure Nebula brand name icon uses the theme's primary color */
+        .navbar-brand .fa-meteor {
+             color: hsl(204, 86%, 53%) !important;
+        }
+
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <h1 class="title is-4"><i class="fa-solid fa-meteor has-text-primary"></i> Nebula</h1>
+                </a>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="#products" class="navbar-item has-text-weight-semibold">
+                        Products
+                    </a>
+                    <a class="navbar-item has-text-weight-semibold">
+                        Pricing
+                    </a>
+                    <a class="navbar-item has-text-weight-semibold">
+                        About
+                    </a>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary is-outlined">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title is-1 has-text-white hero-title">
+                    Bring Order to Your Digital Universe
+                </p>
+                <p class="subtitle is-3 has-text-light mt-4 hero-subtitle">
+                    Nebula provides the tools to collect and consume the content that matters to you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section is-medium" id="products">
+        <div class="container">
+            <div class="has-text-centered">
+                <h2 class="title is-2">Two Apps, One Cohesive Experience</h2>
+                <p class="subtitle is-5 has-text-grey-dark">Follow your favorite sources with News, and save anything for later with Reader.</p>
+            </div>
+            
+            <div class="columns is-centered is-variable is-8 product-columns">
+                <!-- News Product -->
+                <div class="column is-5">
+                    <div class="card product-card">
+                        <div class="card-content has-text-centered">
+                            <div class="is-size-1 has-text-primary mb-4">
+                               <i class="fa-solid fa-satellite-dish"></i>
+                            </div>
+                            <p class="title is-3">News</p>
+                            <p class="subtitle is-6">Your personal cosmos of content. News brings the universe of web feeds directly to you, organized and uncluttered.</p>
+                            <p class="has-text-grey">The intelligent feed reader that filters out the noise.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item has-text-weight-bold">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Reader Product -->
+                <div class="column is-5">
+                    <div class="card product-card">
+                        <div class="card-content has-text-centered">
+                            <div class="is-size-1 has-text-primary mb-4">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                            <p class="title is-3">Reader</p>
+                            <p class="subtitle is-6">Capture constellations of content. Save articles, stories, and videos from across the web to read later, anytime, anywhere.</p>
+                            <p class="has-text-grey">Your quiet corner of the internet for focused reading.</p>
+                        </div>
+                         <footer class="card-footer">
+                            <a href="#" class="card-footer-item has-text-weight-bold">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Nebula</strong> by Space Bar Labs.
+            </p>
+            <p>
+                <i class="fa-solid fa-meteor has-text-primary"></i>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Bulma mobile navbar toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
