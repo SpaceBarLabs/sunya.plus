@@ -6,10 +6,8 @@
     <meta name="theme-color" content="#ffffff">
     <title>Pleiades - Your Content, Organized.</title>
     
-    <!-- Bulma CSS Framework & Lux Theme -->
     <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css">
     
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -107,11 +105,13 @@
                 transform: translateY(0);
             }
         }
+        #pro .product-card {
+            border-color: hsl(0, 0%, 48%);
+        }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
@@ -153,7 +153,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -167,7 +166,6 @@
         </div>
     </section>
 
-    <!-- Products Section -->
     <section class="section is-medium" id="products">
         <div class="container">
             <div class="has-text-centered">
@@ -176,7 +174,6 @@
             </div>
             
             <div class="columns is-centered is-variable is-8 product-columns">
-                <!-- News Product -->
                 <div class="column is-5">
                     <div class="card product-card">
                         <div class="card-content has-text-centered">
@@ -193,7 +190,6 @@
                     </div>
                 </div>
 
-                <!-- Reader Product -->
                 <div class="column is-5">
                     <div class="card product-card">
                         <div class="card-content has-text-centered">
@@ -212,19 +208,19 @@
             </div>
         </div>
     </section>
-
+    
     <section class="section is-medium has-background-grey-darker" id="pro">
         <div class="container">
             <div class="has-text-centered">
                 <h2 class="title is-2 has-text-white">Pleiades Pro</h2>
                 <p class="subtitle is-5 has-text-grey-light">Powerful tools for creators and businesses.</p>
             </div>
-
+            
             <div class="columns is-centered is-variable is-8 product-columns">
                 <div class="column is-5">
                     <div class="card product-card has-background-dark">
                         <div class="card-content has-text-centered">
-                            <div class="is-size-1 has-text-primary mb-4">
+                            <div class="is-size-1 has-text-white mb-4">
                                <i class="fa-solid fa-chart-line"></i>
                             </div>
                             <p class="title is-3 has-text-white">Analytics</p>
@@ -240,7 +236,7 @@
                 <div class="column is-5">
                     <div class="card product-card has-background-dark">
                         <div class="card-content has-text-centered">
-                            <div class="is-size-1 has-text-primary mb-4">
+                            <div class="is-size-1 has-text-white mb-4">
                                 <i class="fa-solid fa-link"></i>
                             </div>
                             <p class="title is-3 has-text-white">Links</p>
@@ -255,8 +251,7 @@
             </div>
         </div>
     </section>
-    
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="content has-text-centered">
             <p class="mb-4">
