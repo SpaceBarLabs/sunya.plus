@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff">
-    <title>Pleiades - Your Content, Organized.</title>
+    <title>Pleiades - Our Products</title>
     
-    <!-- Bulma CSS Framework & Lux Theme -->
     <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css">
     
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         /* The Lux theme handles its own font imports and background colors. */
 
         /* Hero Section Styling */
-        .hero.is-fullheight {
+        .hero.is-primary {
             /* Image of the Pleiades Star Cluster */
             background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
             background-position: center center;
@@ -24,19 +22,8 @@
             background-attachment: fixed; /* Creates a parallax effect */
         }
 
-        .hero .title {
-            /* Explicitly set the font to match the Lux theme's header font */
-            font-family: "Nunito Sans", sans-serif;
-        }
-
-        /* Hero animation */
-        .hero-title {
-            animation: fadeInDown 1s ease-out;
-            text-transform: uppercase; /* Sets text to all caps */
-        }
-        .hero-subtitle {
-            animation: fadeInUp 1s ease-out 0.5s;
-            animation-fill-mode: backwards;
+        .hero .title, .hero .subtitle {
+            color: #fff;
         }
 
         /* Product card styling */
@@ -72,7 +59,7 @@
         .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title {
              color: #fff;
         }
-        .navbar-item a:hover {
+        .navbar-item a:hover, .navbar-item.is-active {
             color: hsl(204, 86%, 53%);
         }
 
@@ -85,37 +72,14 @@
             margin: 0 10px;
         }
 
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/">
                     <h1 class="title is-4"><i class="fa-solid fa-circle-nodes has-text-primary"></i> Pleiades</h1>
                 </a>
     
@@ -129,13 +93,13 @@
     
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <a href="/products" class="navbar-item has-text-weight-semibold">
+                    <a href="/products/" class="navbar-item has-text-weight-semibold is-active">
                         Products
                     </a>
-                    <a href="/pricing" class="navbar-item has-text-weight-semibold">
+                    <a class="navbar-item has-text-weight-semibold">
                         Pricing
                     </a>
-                    <a href="/pricing" class="navbar-item has-text-weight-semibold">
+                    <a class="navbar-item has-text-weight-semibold">
                         About
                     </a>
                     <div class="navbar-item">
@@ -153,21 +117,19 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero is-fullheight">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <p class="title is-1 has-text-white hero-title">
-                    Bring Order to Your Digital Universe
-                </p>
-                <p class="subtitle is-3 has-text-light mt-4 hero-subtitle">
-                    Pleiades provides the tools to manage your constellation of data.
-                </p>
-            </div>
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+            Our Products
+          </h1>
+          <h2 class="subtitle is-3">
+            The tools to manage your constellation of data.
+          </h2>
         </div>
+      </div>
     </section>
 
-    <!-- Products Section -->
     <section class="section is-medium" id="products">
         <div class="container">
             <div class="has-text-centered">
@@ -176,7 +138,6 @@
             </div>
             
             <div class="columns is-centered is-variable is-8 product-columns">
-                <!-- News Product -->
                 <div class="column is-5">
                     <div class="card product-card">
                         <div class="card-content has-text-centered">
@@ -188,12 +149,11 @@
                             <p class="has-text-grey">Your content in chronological order. No algorithm, no noise.</p>
                         </div>
                         <footer class="card-footer">
-                            <a href="/products/news" class="card-footer-item has-text-weight-bold">Learn More</a>
+                            <a href="/products/news/" class="card-footer-item has-text-weight-bold">Learn More</a>
                         </footer>
                     </div>
                 </div>
 
-                <!-- Reader Product -->
                 <div class="column is-5">
                     <div class="card product-card">
                         <div class="card-content has-text-centered">
@@ -202,10 +162,10 @@
                             </div>
                             <p class="title is-3">Reader</p>
                             <p class="subtitle is-6">Capture constellations of content. Save articles, stories, and videos from across the web to read later, anytime, anywhere.</p>
-                            <p class="has-text-grey">Your space for focused reading</p>
+                            <p class="has-text-grey">Your quiet corner of the internet for focused reading.</p>
                         </div>
                          <footer class="card-footer">
-                            <a href="/products/reader" class="card-footer-item has-text-weight-bold">Learn More</a>
+                            <a href="/products/reader/" class="card-footer-item has-text-weight-bold">Learn More</a>
                         </footer>
                     </div>
                 </div>
@@ -213,7 +173,6 @@
         </div>
     </section>
     
-    <!-- Footer -->
     <footer class="footer">
         <div class="content has-text-centered">
             <p class="mb-4">
