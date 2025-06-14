@@ -1,0 +1,202 @@
+---
+layout: default
+title: Folio
+permalink: /products/folio/
+---
+
+<style>
+    /* The Lux theme handles its own font imports and background colors. */
+
+    /* Hero Section Styling */
+    .hero.is-primary {
+        /* Image of the Pleiades Star Cluster */
+        background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed; /* Creates a parallax effect */
+    }
+
+    .hero .title, .hero .subtitle {
+        color: #fff;
+    }
+
+    .navbar.is-fixed-top {
+        background-color: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Ensure navbar text and brand title is readable and white */
+    .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title {
+         color: #fff;
+    }
+    .navbar-item a:hover {
+        color: hsl(204, 86%, 53%);
+    }
+
+    /* Set logo icon to the new highlight color */
+    .navbar-brand .fa-circle-nodes, .footer .fa-circle-nodes {
+         color: #5f4dea !important;
+    }
+
+    .footer .footer-links a {
+        margin: 0 10px;
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+        color: #5f4dea;
+    }
+
+    /* Custom styling for the Powered by Open Source section */
+    .powered-by-section {
+        background-color: #23272d; /* Dark slate color from Lux theme */
+    }
+    .powered-by-section .title,
+    .powered-by-section .subtitle,
+    .powered-by-section .subtitle strong {
+        color: #fff;
+    }
+    .powered-by-section .subtitle a {
+        color: #5f4dea; /* Use the brand highlight for the link */
+        text-decoration: underline;
+    }
+     .powered-by-section .subtitle a:hover {
+        color: #fff;
+    }
+
+</style>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1 class="title is-4"><i class="fa-solid fa-circle-nodes has-text-primary"></i> Pleiades</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="/" class="navbar-item has-text-weight-semibold">
+                    Home
+                </a>
+                <a class="navbar-item has-text-weight-semibold">
+                    Pricing
+                </a>
+                <a class="navbar-item has-text-weight-semibold">
+                    About
+                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">
+        Pleiades Folio
+      </h1>
+      <h2 class="subtitle is-3">
+        Your space for focused reading
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-bookmark"></i></span>
+            </div>
+            <div class="column is-6">
+                <h3 class="title is-3">Save From Anywhere</h3>
+                <p class="subtitle is-5 has-text-grey">Use our browser extension to save articles, videos, or any webpage. If you can view it, you can save it to Folio for later.</p>
+            </div>
+        </div>
+
+        <hr class="is-medium">
+
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-6">
+                 <h3 class="title is-3">A Clean, Distraction-Free View</h3>
+                <p class="subtitle is-5 has-text-grey">Folio strips away ads, pop-ups, and other clutter, leaving you with a clean, readable version of the content. Customize fonts and themes to create your perfect reading environment.</p>
+            </div>
+             <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-file-lines"></i></span>
+            </div>
+        </div>
+
+         <hr class="is-medium">
+
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+            </div>
+            <div class="column is-6">
+                <h3 class="title is-3">Read Anywhere, Even Offline</h3>
+                <p class="subtitle is-5 has-text-grey">Your saved articles sync across all your devices. With offline mode, your reading list is always available, whether you're on a plane or in a subway.</p>
+            </div>
+        </div>
+
+        <hr class="is-medium">
+
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-6">
+                <h3 class="title is-3">Your Data, Your Freedom</h3>
+                <p class="subtitle is-5 has-text-grey">We believe you should never be locked into a service. Because Pleiades Folio is built on the open-source Wallabag platform, you can export your data at any time and move to another provider or even host it yourself.</p>
+            </div>
+            <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section is-medium has-background-light">
+    <div class="container has-text-centered">
+        <h2 class="title is-3">GET 17% OFF</h2>
+        <p class="subtitle is-5 has-text-danger has-text-weight-bold">Sale ending soon!</p>
+
+        <h3 class="title is-3" style="font-weight: 300;">
+          <del class="has-text-grey-light">$12</del> $10 <span class="subtitle is-4" style="font-weight: 300;">/ year</span>
+        </h3>
+
+        <a href="https://buy.stripe.com/some-other-link" class="button is-primary is-large my-5">
+            <strong>Subscribe Now</strong>
+        </a>
+  <p>&nbsp;</p>
+        <p class="help">Cancel anytime, no questions asked.</p>
+        <p class="help">Please note that we are currently only accepting customers in the United States and Canada.</p>
+    </div>
+</section>
+
+<section class="section powered-by-section">
+  <div class="container has-text-centered">
+    <h3 class="title is-4">PROUDLY POWERED BY OPEN SOURCE</h3>
+    <p class="is-5 has-text-light">
+      Pleiades Folio is built on <a href="https://github.com/wallabag/wallabag" target="_blank">Wallabag</a>, a free, self-hostable reading list app.
+      <br>
+      To support its continued development, we contribute 10% of our profits to the Wallabag project.
+    </p>
+  </div>
+</section>
