@@ -5,3 +5,8 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem "github-pages", "~> 232"
+
+group :development do
+  gem 'nokogiri'
+  gem 'crass'
+end
