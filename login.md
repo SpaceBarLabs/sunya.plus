@@ -56,47 +56,6 @@ permalink: /login/
 
 </style>
 
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <h1 class="title is-4"><i class="fa-solid fa-circle-nodes has-text-primary"></i> Pleiades</h1>
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-end">
-                <a href="/products/" class="navbar-item has-text-weight-semibold">
-                    Products
-                </a>
-                <a href="/pricing/" class="navbar-item has-text-weight-semibold">
-                    Pricing
-                </a>
-                <a href="/about/" class="navbar-item has-text-weight-semibold">
-                    About
-                </a>
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a href="/signup/" class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a href="/login/" class="button is-light">
-                            Log in
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container has-text-centered">
