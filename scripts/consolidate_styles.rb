@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 #
-# consolidate_styles.rb (Final Version)
+# consolidate_styles.rb (Sass Version)
 #
 # This script finds all CSS from inline <style> tags within a Jekyll `_site`
 # directory, consolidates them, optimizes/minifies them, and saves the result
-# into a single, clean CSS file.
+# into a single, clean CSS file using the stable `sass` gem.
 #
 # --- Setup ---
 #
@@ -18,7 +18,7 @@
 require 'bundler/setup'
 
 require 'nokogiri'
-require 'crass'
+require 'sass'
 require 'fileutils'
 
 # --- Configuration ---
@@ -60,13 +60,22 @@ if all_styles.empty?
   exit 0
 end
 
-# 4. Consolidate and clean the CSS with the Crass gem
-puts "🚀 Consolidating and optimizing all styles..."
+# 4. Consolidate and clean the CSS with the Sass gem
+puts "🚀 Consolidating and optimizing all styles with Sass..."
 consolidated_css = all_styles.join("\n")
 
-# Use Crass.parse to create an array of nodes, then map over the array
-# calling .to_s on each node, and finally join them into a single string.
-clean_css = Crass.parse(consolidated_css, minify: true).map(&:to_s).join
+# Use the Sass::Engine to process the combined CSS string.
+begin
+  # The :scss syntax is used because we are feeding it plain CSS.
+  # The :compressed style minifies the output.
+  engine = Sass::Engine.new(consolidated_css, syntax: :scss, style: :compressed)
+  clean_css = engine.render
+rescue Sass::SyntaxError => e
+  puts "❌ Sass compilation failed:"
+  puts "   Line #{e.sass_line}: #{e.message}"
+  exit 1
+end
+
 
 # 5. Save the final CSS file
 FileUtils.mkdir_p(OUTPUT_DIR)
