@@ -49,10 +49,9 @@ permalink: /pricing/pro/
 
 <section class="section is-medium" id="pricing">
     <div class="container">
-
         <div class="tabs is-centered is-toggle is-fullwidth is-large">
           <ul>
-            <li><a href="pricing/index.html">Personal</a></li>
+            <li><a href="/pricing/personal/">Personal</a></li>
             <li class="is-active"><a>Pro</a></li>
           </ul>
         </div>

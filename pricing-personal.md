@@ -93,6 +93,37 @@ permalink: /pricing/personal/
         font-weight: bold;
     }
 
+    /* Styles from original pricing page */
+    .hero.is-primary {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .hero .title, .hero .subtitle { color: #fff; }
+    .navbar.is-fixed-top {
+        background-color: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title { color: #fff; }
+    .navbar-item a:hover, .navbar-item.is-active a { color: hsl(204, 86%, 53%); }
+    .navbar-brand .fa-circle-nodes { color: #5f4dea !important; }
+    .footer .footer-links a { margin: 0 10px; }
+    .pricing-table { border-collapse: collapse; width: 100%; margin-top: 3rem; }
+    .pricing-table th, .pricing-table td { padding: 1.25rem 1rem; text-align: center; border: 1px solid #dbdbdb; }
+    .pricing-table th { background-color: #f5f5f5; }
+    .pricing-table td.feature-name { text-align: left; font-weight: 500; }
+    .pricing-table .fa-check { color: #23d160; font-size: 1.5rem; }
+    .pricing-table .fa-times { color: #ff3860; font-size: 1.5rem; }
+    .pricing-table .price-del { color: #999; }
+    .pricing-table .price-sale { font-size: 1.75rem; font-weight: bold; }
+    .pricing-table .price-period { font-size: 1rem; font-weight: 300; }
+    .pricing-table .plan-title { font-size: 1.5rem; font-weight: bold; }
+    .sale-banner { background-color: #ff3860; color: #fff; padding: 0.5rem; font-weight: bold; }
+    .tabs a { color: #363636; }
+    .tabs.is-boxed a, .tabs.is-toggle a { color: #363636; }
+    .tabs.is-boxed li.is-active a, .tabs.is-toggle li.is-active a { color: #fff; background-color: #5f4dea; border-color: #5f4dea; }
 </style>
 
 <section class="hero is-primary is-medium">
@@ -113,6 +144,13 @@ permalink: /pricing/personal/
 
 <section class="section is-medium" id="pricing">
     <div class="container">
+        <div class="tabs is-centered is-toggle is-fullwidth is-large">
+          <ul>
+            <li class="is-active"><a>Personal</a></li>
+            <li><a href="/pricing/pro/">Pro</a></li>
+          </ul>
+        </div>
+
         <div class="table-container">
             <table class="table is-fullwidth is-bordered pricing-table">
                 <thead>
