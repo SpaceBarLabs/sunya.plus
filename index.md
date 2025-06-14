@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title is-1 has-text-white hero-title">
+                Bring Order to Your Digital Universe
+            </p>
+            <p class="subtitle is-3 has-text-light mt-4 hero-subtitle">
+                Pleiades provides the tools to manage your constellation of data.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section is-medium" id="products">
+    <div class="container">
+        <div class="has-text-centered">
+            <h2 class="title is-2">Your Personal Cloud in Space</h2>
+            <p class="subtitle is-5 has-text-grey-dark">Our first two apps, News and Folio, form the foundation of your organized digital life.</p>
+        </div>
+
+        <div class="columns is-centered is-variable is-8 product-columns">
+            <div class="column is-5">
+                <div class="card product-card">
+                    <div class="card-content has-text-centered">
+                        <div class="is-size-1 has-text-primary mb-4">
+                           <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <p class="title is-3">News</p>
+                        <p class="subtitle is-6">Your personal cosmos of content. News brings the universe of web feeds directly to you, organized and uncluttered.</p>
+                        <p class="has-text-grey">Your content in chronological order. No algorithm, no noise.</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="/products/news" class="card-footer-item has-text-weight-bold">Learn More</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="column is-5">
+                <div class="card product-card">
+                    <div class="card-content has-text-centered">
+                        <div class="is-size-1 has-text-primary mb-4">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </div>
+                        <p class="title is-3">Folio</p>
+                        <p class="subtitle is-6">Capture constellations of content, offline. Save articles and stories from across the web to read later, even on the plane or train.</p>
+                        <p class="has-text-grey">Your space for focused reading</p>
+                    </div>
+                     <footer class="card-footer">
+                        <a href="/products/folio" class="card-footer-item has-text-weight-bold">Learn More</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-medium has-background-grey-darker" id="pro">
+    <div class="container">
+        <div class="has-text-centered">
+            <h2 class="title is-2 has-text-white">Pleiades Pro</h2>
+            <p class="subtitle is-5 has-text-grey-light">Powerful tools for creators and businesses.</p>
+        </div>
+
+        <div class="columns is-centered is-variable is-8 product-columns">
+            <div class="column is-5">
+                <div class="card product-card has-background-dark">
+                    <div class="card-content has-text-centered">
+                        <div class="is-size-1 has-text-white mb-4">
+                           <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <p class="title is-3 has-text-white">Analytics</p>
+                        <p class="subtitle is-6 has-text-grey-light">Understand your audience with powerful, privacy-focused web and app analytics.</p>
+                        <p class="has-text-grey">Your data, your insights. No compromises.</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="/products/analytics" class="card-footer-item has-text-weight-bold has-text-white">Learn More</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="column is-5">
+                <div class="card product-card has-background-dark">
+                    <div class="card-content has-text-centered">
+                        <div class="is-size-1 has-text-white mb-4">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <p class="title is-3 has-text-white">Links</p>
+                        <p class="subtitle is-6 has-text-grey-light">Create and manage short links with detailed click-through analytics. The perfect tool for your marketing campaigns.</p>
+                        <p class="has-text-grey">Shorten, share, and track your links.</p>
+                    </div>
+                     <footer class="card-footer">
+                        <a href="/products/links" class="card-footer-item has-text-weight-bold has-text-white">Learn More</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
