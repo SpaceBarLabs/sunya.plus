@@ -1,0 +1,165 @@
+---
+layout: default
+title: News
+permalink: /products/news/
+---
+
+<style>
+    /* The Lux theme handles its own font imports and background colors. */
+
+    /* Hero Section Styling */
+    .hero.is-primary {
+        /* Image of the Pleiades Star Cluster */
+        background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed; /* Creates a parallax effect */
+    }
+
+    .hero .title, .hero .subtitle {
+        color: #fff;
+    }
+
+    .navbar.is-fixed-top {
+        background-color: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Ensure navbar text and brand title is readable and white */
+    .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title {
+         color: #fff;
+    }
+    .navbar-item a:hover {
+        color: hsl(204, 86%, 53%);
+    }
+
+    /* Set logo icon to the new highlight color */
+    .navbar-brand .fa-circle-nodes, .footer .fa-circle-nodes {
+         color: #5f4dea !important;
+    }
+    
+    .footer .footer-links a {
+        margin: 0 10px;
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+        color: #5f4dea;
+    }
+
+    /* Custom styling for the Powered by Open Source section */
+    .powered-by-section {
+        background-color: #23272d; /* Dark slate color from Lux theme */
+    }
+    .powered-by-section .title,
+    .powered-by-section .subtitle,
+    .powered-by-section .subtitle strong {
+        color: #fff;
+    }
+    .powered-by-section .subtitle a {
+        color: #5f4dea; /* Use the brand highlight for the link */
+        text-decoration: underline;
+    }
+     .powered-by-section .subtitle a:hover {
+        color: #fff;
+    }
+
+</style>
+
+<!-- Hero Section -->
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">
+        Pleiades News
+      </h1>
+      <h2 class="subtitle is-3">
+        Your content, in your control
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-list-ol"></i></span>
+            </div>
+            <div class="column is-6">
+                <h3 class="title is-3">An Algorithm-Free Feed</h3>
+                <p class="subtitle is-5 has-text-grey">Tired of social media algorithms deciding what you see? With Pleiades News, your feeds are presented in a simple, chronological order. The latest content is always at the top. No manipulation, no "engagement" metrics—just the information you asked for, as it's published.</p>
+            </div>
+        </div>
+
+        <hr class="is-medium">
+
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-6">
+                 <h3 class="title is-3">All Your Sources, One Place</h3>
+                <p class="subtitle is-5 has-text-grey">Bring your digital universe together. Add any website with an RSS feed, from major news outlets to your favorite niche blogs. Pleiades News consolidates everything into a single, streamlined view, saving you from juggling dozens of tabs.</p>
+            </div>
+             <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-rss"></i></span>
+            </div>
+        </div>
+
+         <hr class="is-medium">
+
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            </div>
+            <div class="column is-6">
+                <h3 class="title is-3">Syncs Across All Devices</h3>
+                <p class="subtitle is-5 has-text-grey">Start reading on your phone during your commute and pick up right where you left off on your desktop. Pleiades News keeps your read history and saved articles perfectly in sync across all your devices, providing a seamless experience wherever you are.</p>
+            </div>
+        </div>
+
+        <hr class="is-medium">
+
+        <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-6">
+                <h3 class="title is-3">Your Data, Your Freedom</h3>
+                <p class="subtitle is-5 has-text-grey">We believe you should never be locked into a service. Because Pleiades News is built on the open-source FreshRSS platform, you can export your data at any time and move to another provider or even host it yourself. Your feeds and settings are yours to take with you, always.</p>
+            </div>
+            <div class="column is-5 has-text-centered">
+                <span class="feature-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section is-medium has-background-light">
+    <div class="container has-text-centered">
+        <h2 class="title is-3">GET 50% OFF</h2>
+        <p class="subtitle is-5 has-text-danger has-text-weight-bold">Sale ending soon!</p>
+
+        <h3 class="title is-3" style="font-weight: 300;">
+          <del class="has-text-grey-light">$24</del> $12 <span class="subtitle is-4" style="font-weight: 300;">/ year</span>
+        </h3>
+
+        <a href="https://buy.stripe.com/7sI7ufgmn0rAdAQ9AA" class="button is-primary is-large my-5">
+            <strong>Subscribe Now</strong>
+        </a>
+    <p>&nbsp;</p>
+        <p class="help">Cancel anytime, no questions asked.</p>
+        <p class="help">Please note that we are currently only accepting customers in the United States and Canada.</p>
+    </div>
+</section>
+
+<!-- Powered By Section -->
+<section class="section powered-by-section">
+  <div class="container has-text-centered">
+    <h3 class="title is-4">PROUDLY POWERED BY OPEN SOURCE</h3>
+    <p class="is-5 has-text-light">
+      Pleiades News is built on <a href="https://github.com/FreshRSS/FreshRSS" target="_blank">FreshRSS</a>, a free, self-hostable RSS aggregator.
+      <br>
+      To support its continued development, we contribute 10% of our profits to the FreshRSS project.
+    </p>
+  </div>
+</section>
