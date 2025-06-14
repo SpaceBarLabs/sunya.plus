@@ -67,8 +67,8 @@ consolidated_css = all_styles.join("\n")
 # Use the Sass::Engine to process the combined CSS string.
 begin
   # The :scss syntax is used because we are feeding it plain CSS.
-  # The :compressed style minifies the output.
-  engine = Sass::Engine.new(consolidated_css, syntax: :scss, style: :compressed)
+  # The :expanded style makes the output readable and uncompressed.
+  engine = Sass::Engine.new(consolidated_css, syntax: :scss, style: :expanded)
   clean_css = engine.render
 rescue Sass::SyntaxError => e
   puts "❌ Sass compilation failed:"
