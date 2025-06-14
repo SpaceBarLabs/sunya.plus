@@ -1,0 +1,183 @@
+---
+layout: default
+title: Sign Up
+permalink: /signup/
+---
+
+<style>
+    /* The Lux theme handles its own font imports and background colors. */
+
+    /* Hero Section Styling */
+    .hero.is-primary {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed; /* Creates a parallax effect */
+    }
+
+    .hero .title, .hero .subtitle {
+        color: #fff;
+    }
+
+    .navbar.is-fixed-top {
+        background-color: rgba(10, 10, 10, 0.85); /* Slightly darker for better contrast */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Ensure navbar text and brand title is readable and white */
+    .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title {
+         color: #fff;
+    }
+    .navbar-item a:hover {
+        color: hsl(204, 86%, 53%);
+    }
+
+    /* Set logo icon to the new highlight color */
+    .navbar-brand .fa-circle-nodes {
+         color: #5f4dea !important;
+    }
+    
+    .footer .footer-links a {
+        margin: 0 10px;
+    }
+
+    /* Sign-up card styling */
+    .signup-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid hsl(0, 0%, 93%);
+        padding: 2rem;
+        border-radius: 6px;
+    }
+    
+    .signup-card .card-title {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .signup-card .card-price {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+    }
+    .signup-card .card-price-period {
+        font-size: 1rem;
+        color: #7a7a7a;
+    }
+    
+    .signup-card .card-description {
+        flex-grow: 1;
+        margin-bottom: 1.5rem;
+    }
+    
+    .bundle-card {
+        border: 3px solid #5f4dea;
+    }
+    
+    .best-value-banner {
+        background-color: #5f4dea;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        margin: -2rem -2rem 1.5rem -2rem;
+        border-radius: 0;
+        font-weight: bold;
+    }
+</style>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1 class="title is-4"><i class="fa-solid fa-circle-nodes has-text-primary"></i> Pleiades</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="/products/" class="navbar-item has-text-weight-semibold">
+                    Products
+                </a>
+                <a href="/pricing/" class="navbar-item has-text-weight-semibold">
+                    Pricing
+                </a>
+                <a href="/about/" class="navbar-item has-text-weight-semibold">
+                    About
+                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="/signup/" class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1">
+        Choose Your Plan
+      </h1>
+      <h2 class="subtitle is-3">
+        Start organizing your digital universe in minutes
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns is-centered is-vcentered">
+
+            <div class="column is-4">
+                <div class="signup-card">
+                    <h3 class="card-title">News</h3>
+                    <p class="card-price">$12<span class="card-price-period"> / year</span></p>
+                    <p class="card-description has-text-grey">Your personal cosmos of content. An algorithm-free, chronological feed of your favorite sites.</p>
+                    <a href="https://buy.stripe.com/7sI7ufgmn0rAdAQ9AA" class="button is-primary is-fullwidth"><strong>Subscribe to News</strong></a>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="signup-card bundle-card">
+                    <div class="best-value-banner">BEST VALUE</div>
+                    <h3 class="card-title">Universe</h3>
+                    <p class="card-price">$20<span class="card-price-period"> / year</span></p>
+                    <p class="card-description has-text-grey">Get both News and Folio for complete control over your digital content and enjoy our biggest discount.</p>
+                    <a href="https://buy.stripe.com/gZp16Vd6f1vEgP6cMN" class="button is-primary is-fullwidth"><strong>Subscribe to the Bundle</strong></a>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                 <div class="signup-card">
+                    <h3 class="card-title">Folio</h3>
+                    <p class="card-price">$10<span class="card-price-period"> / year</span></p>
+                    <p class="card-description has-text-grey">Your space for focused reading. Save articles and videos for focused, distraction-free enjoyment.</p>
+                    <a href="https://buy.stripe.com/some-other-link" class="button is-primary is-fullwidth"><strong>Subscribe to Folio</strong></a>
+                </div>
+            </div>
+        </div>
+         <div class="has-text-centered mt-5">
+             <p class="help">All prices are in USD. Sale pricing is for a limited time.</p>
+             <p class="help">Please note that we are currently only accepting customers in the United States and Canada.</p>
+             <p class="help mt-3">Need more details? <a href="/pricing/">Visit our full pricing page</a>.</p>
+         </div>
+    </div>
+</section>
