@@ -1,0 +1,222 @@
+---
+layout: default
+title: Pricing - Personal
+permalink: /pricing/personal/
+---
+
+<style>
+    /* The Lux theme handles its own font imports and background colors. */
+
+    /* Hero Section Styling */
+    .hero.is-primary {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed; /* Creates a parallax effect */
+    }
+
+    .hero .title, .hero .subtitle {
+        color: #fff;
+    }
+
+    .navbar.is-fixed-top {
+        background-color: rgba(10, 10, 10, 0.85); /* Slightly darker for better contrast */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Ensure navbar text and brand title is readable and white */
+    .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title {
+         color: #fff;
+    }
+    .navbar-item a:hover, .navbar-item.is-active a {
+        color: hsl(204, 86%, 53%);
+    }
+
+    /* Set logo icon to the new highlight color */
+    .navbar-brand .fa-circle-nodes {
+         color: #5f4dea !important;
+    }
+    
+    .footer .footer-links a {
+        margin: 0 10px;
+    }
+
+    /* Pricing Table Styling */
+    .pricing-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .pricing-table th, .pricing-table td {
+        padding: 1.25rem 1rem;
+        text-align: center;
+        border: 1px solid #dbdbdb;
+    }
+    .pricing-table th {
+        background-color: #f5f5f5;
+    }
+    .pricing-table td.feature-name {
+        text-align: left;
+        font-weight: 500;
+    }
+    .pricing-table .fa-check {
+        color: #23d160; /* Bulma's success color */
+        font-size: 1.5rem;
+    }
+    .pricing-table .price-del {
+        color: #999;
+    }
+    .pricing-table .price-sale {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    .pricing-table .price-period {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .pricing-table .plan-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .bundle-column {
+        border: 3px solid #5f4dea; /* Highlight the bundle */
+    }
+    .bundle-header {
+        background-color: #5f4dea;
+        color: #fff;
+    }
+    .sale-banner {
+        background-color: #ff3860;
+        color: #fff;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+
+</style>
+
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1">
+        Find the Right Plan for You
+      </h1>
+      <h2 class="subtitle is-3">
+        Simple, affordable pricing for your personal cloud.
+      </h2>
+       <p class="subtitle is-5 has-text-warning has-text-weight-bold mt-5">
+            Limited Time Offer: All annual plans are on sale!
+        </p>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium" id="pricing">
+    <div class="container">
+        <div class="table-container">
+            <table class="table is-fullwidth is-bordered pricing-table">
+                <thead>
+                    <tr>
+                        <th class="is-vcentered">
+                            <h3 class="title is-4">Features</h3>
+                        </th>
+                        <th class="is-vcentered">
+                            <p class="plan-title">News</p>
+                            <p class="subtitle is-6">Your Personal Feed</p>
+                        </th>
+                        <th class="is-vcentered">
+                            <p class="plan-title">Folio</p>
+                            <p class="subtitle is-6">Read-It-Later App</p>
+                        </th>
+                        <th class="bundle-header is-vcentered">
+                            <p class="plan-title">Universe</p>
+                            <p class="subtitle is-6">News + Folio Bundle</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">Chronological, algorithm-free feed</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td></td>
+                        <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Follow any website with an RSS feed</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td></td>
+                        <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                     <tr>
+                        <td class="feature-name">Save articles, videos, and pages from anywhere</td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">A clean, distraction-free reading view</td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Read anywhere, even offline</td>
+                        <td></td>
+                       <td><i class="fas fa-check"></i></td>
+                       <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Sync across all your devices</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Export your data (no vendor lock-in)</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td class="bundle-column"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name has-text-weight-bold">Annual Price</td>
+                        <td>
+                            <p class="price-del"><del>$24 / year</del></p>
+                            <p class="price-sale">$12 <span class="price-period">/ year</span></p>
+                        </td>
+                        <td>
+                            <p class="price-del"><del>$12 / year</del></p>
+                            <p class="price-sale">$10 <span class="price-period">/ year</span></p>
+                        </td>
+                        <td class="bundle-column">
+                            <p class="price-del"><del>$36 / year</del></p>
+                            <p class="price-sale">$20 <span class="price-period">/ year</span></p>
+                            <div class="sale-banner">BEST VALUE</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="https://buy.stripe.com/7sI7ufgmn0rAdAQ9AA" class="button is-primary is-fullwidth">
+                                <strong>Subscribe to News</strong>
+                            </a>
+                        </td>
+                        <td>
+                             <a href="https://buy.stripe.com/14AdR94xX1xg57J3VS0Ba05" class="button is-primary is-fullwidth">
+                                <strong>Subscribe to Folio</strong>
+                            </a>
+                        </td>
+                        <td class="bundle-column">
+                             <a href="https://buy.stripe.com/7sI7ufgmn0rAdAQ9AA" class="button is-primary is-fullwidth">
+                                <strong>Subscribe to the Bundle</strong>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="has-text-centered mt-4">
+                 <p class="help">All prices are in USD. Sale ending soon!</p>
+                 <p class="help">Please note that we are currently only accepting customers in the United States and Canada.</p>
+             </div>
+        </div>
+    </div>
+</section>
