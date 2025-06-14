@@ -1,0 +1,144 @@
+---
+layout: default
+title: Pricing - Pro
+permalink: /pricing/pro/
+---
+
+<style>
+    /* Styles from original pricing page */
+    .hero.is-primary {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), url('https://stargazehawaii.com/wp-content/uploads/2015/01/M45-Pleiades-Cluster.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .hero .title, .hero .subtitle { color: #fff; }
+    .navbar.is-fixed-top {
+        background-color: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .navbar-item, .navbar-item a, .navbar-brand a, .navbar-brand .title { color: #fff; }
+    .navbar-item a:hover, .navbar-item.is-active a { color: hsl(204, 86%, 53%); }
+    .navbar-brand .fa-circle-nodes { color: #5f4dea !important; }
+    .footer .footer-links a { margin: 0 10px; }
+    .pricing-table { border-collapse: collapse; width: 100%; margin-top: 3rem; }
+    .pricing-table th, .pricing-table td { padding: 1.25rem 1rem; text-align: center; border: 1px solid #dbdbdb; }
+    .pricing-table th { background-color: #f5f5f5; }
+    .pricing-table td.feature-name { text-align: left; font-weight: 500; }
+    .pricing-table .fa-check { color: #23d160; font-size: 1.5rem; }
+    .pricing-table .fa-times { color: #ff3860; font-size: 1.5rem; }
+    .pricing-table .price-del { color: #999; }
+    .pricing-table .price-sale { font-size: 1.75rem; font-weight: bold; }
+    .pricing-table .price-period { font-size: 1rem; font-weight: 300; }
+    .pricing-table .plan-title { font-size: 1.5rem; font-weight: bold; }
+    .sale-banner { background-color: #ff3860; color: #fff; padding: 0.5rem; font-weight: bold; }
+    .tabs a { color: #363636; }
+    .tabs.is-boxed a, .tabs.is-toggle a { color: #363636; }
+    .tabs.is-boxed li.is-active a, .tabs.is-toggle li.is-active a { color: #fff; background-color: #5f4dea; border-color: #5f4dea; }
+</style>
+
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1">Find the Right Pro Plan for You</h1>
+      <h2 class="subtitle is-3">Powerful, privacy-focused tools for creators and businesses.</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium" id="pricing">
+    <div class="container">
+
+        <div class="tabs is-centered is-toggle is-fullwidth is-large">
+          <ul>
+            <li><a href="pricing/index.html">Personal</a></li>
+            <li class="is-active"><a>Pro</a></li>
+          </ul>
+        </div>
+        
+        <div class="table-container">
+            <table class="table is-fullwidth is-bordered pricing-table">
+                <thead>
+                    <tr>
+                        <th class="is-vcentered"><h3 class="title is-4">Features</h3></th>
+                        <th class="is-vcentered">
+                            <p class="plan-title">Analytics</p>
+                            <p class="subtitle is-6">Privacy-Focused Insights</p>
+                        </th>
+                        <th class="is-vcentered">
+                            <p class="plan-title">Links</p>
+                            <p class="subtitle is-6">Branded URL Shortener</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">Privacy-Focused Analytics</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Visitor Profiles & Real-time Reports</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Funnels, Heatmaps, Session Recordings</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <td class="feature-name">Custom Short Links</td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Detailed Click Analytics</td>
+                        <td></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">QR Codes on Demand</td>
+                       <td></td>
+                       <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Export your data (no vendor lock-in)</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name has-text-weight-bold">Annual Price</td>
+                        <td>
+                            <p class="price-sale">$50 <span class="price-period">/ year</span></p>
+                            <p class="help">Nano Plan: 10k pageviews/month</p>
+                        </td>
+                        <td>
+                            <p class="price-del"><del>$6 / year</del></p>
+                            <p class="price-sale">$4 <span class="price-period">/ year</span></p>
+                            <p class="help">Light Usage Plan</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="https://buy.stripe.com/00w3cv0hHb7Q43Fbok0Ba04" class="button is-primary is-fullwidth">
+                                <strong>Preorder Analytics</strong>
+                            </a>
+                        </td>
+                        <td>
+                             <a href="https://buy.stripe.com/5kQ4gz6G5cbUgQrfEA0Ba07" class="button is-primary is-fullwidth">
+                                <strong>Preorder Links</strong>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="has-text-centered mt-4">
+                 <p class="help">All prices are in USD. Preorder pricing is for a limited time.</p>
+                 <p class="help">Please note that we are currently only accepting customers in the United States and Canada.</p>
+             </div>
+        </div>
+    </div>
+</section>
