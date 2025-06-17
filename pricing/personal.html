@@ -4,8 +4,6 @@ title: Pricing - Personal
 permalink: /pricing/personal/
 ---
 
-
-
 <section class="hero is-primary is-medium">
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -95,31 +93,31 @@ permalink: /pricing/personal/
                     <tr>
                         <td class="feature-name has-text-weight-bold">Annual Price</td>
                         <td>
-                            <p class="price-sale">$24 <span class="price-period">/ year</span></p>
+                          <p class="price-sale">${{ site.products.news.yearly_price_usd }} <span class="price-period">/ year</span></p>
                         </td>
                         <td>
-                            <p class="price-sale">$12 <span class="price-period">/ year</span></p>
+                            <p class="price-sale">${{ site.products.folio.yearly_price_usd }} <span class="price-period">/ year</span></p>
                         </td>
                         <td class="bundle-column">
-                            <p class="price-del"><del>$36 / year</del></p>
-                            <p class="price-sale">$32 <span class="price-period">/ year</span></p>
+                            <p class="price-del"><del>${{ site.products.news.yearly_price_usd | plus: site.products.folio.yearly_price_usd }}  / year</del></p>
+                            <p class="price-sale">${{ site.products.universe_news_and_folio.yearly_price_usd }} <span class="price-period">/ year</span></p>
                             <div class="sale-banner">BEST VALUE</div>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                          <a href="{{ site.subscribe_links.news }}" class="button is-primary is-fullwidth">
+                          <a href="{{ site.products.news.subscribe_url }}" class="button is-primary is-fullwidth">
                                 <strong>Subscribe to News</strong>
                             </a>
                         </td>
                         <td>
-                          <a href="{{ site.subscribe_links.folio }}" class="button is-primary is-fullwidth">
+                          <a href="{{ site.products.folio.subscribe_url }}" class="button is-primary is-fullwidth">
                                 <strong>Subscribe to Folio</strong>
                             </a>
                         </td>
                         <td class="bundle-column">
-                          <a href="{{ site.subscribe_links.universe_news_and_folio }}" class="button is-primary is-fullwidth">
+                          <a href="{{ site.products.universe_news_and_folio.subscribe_url }}" class="button is-primary is-fullwidth">
                                 <strong>Subscribe to the Bundle</strong>
                             </a>
                         </td>

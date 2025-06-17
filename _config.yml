@@ -3,9 +3,19 @@ title: Sunya
 description: Your personal cloud, in space
 baseurl: ""
 
-subscribe_links:
-  folio: https://buy.stripe.com/cNiaEX3tT7VE7fR2RO0Ba0c
-  links_light: https://buy.stripe.com/9B628r0hHcbUcAbgIE0Ba0d
-  analytics_sublight: https://buy.stripe.com/fZu6oHe8xcbU9nZdws0Ba0e
-  news: https://buy.stripe.com/cNi3cv5C1fo657J8c80Ba0f
-  universe_news_and_folio: https://buy.stripe.com/5kQfZh3tT0tc1VxfEA0Ba0g
+products:
+  folio:
+    yearly_price_usd: 12
+    subscribe_url: https://buy.stripe.com/6oU3cvd4tdfYeIjbok0Ba0i
+  news:
+    yearly_price_usd: 24
+    subscribe_url: https://buy.stripe.com/fZuaEXd4tek243F1NK0Ba0h
+  universe_news_and_folio:
+    yearly_price_usd: 32
+    subscribe_url: https://buy.stripe.com/00wcN5fcBa3Mbw7gIE0Ba0j
+  analytics_sublight:
+    yearly_price_usd: 50
+    subscribe_url: https://buy.stripe.com/3cI6oH1lLfo6gQr0JG0Ba0k
+  links_light:
+    yearly_price_usd: 6
+    subscribe_url: https://buy.stripe.com/dRmdR90hH1xg1VxfEA0Ba0l
