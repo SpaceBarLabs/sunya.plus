@@ -1,0 +1,56 @@
+---
+layout: default
+title: Folio Logo
+permalink: /folio_logo/
+---
+
+<style>
+  .folio-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 128px; /* Fixed width for icon-sized square */
+    height: 128px; /* Fixed height for icon-sized square */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ededed; /* Optional: add a border to visualize the square */
+    box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.02); /* Matches existing card shadow subtly */
+  }
+
+  .folio-icon {
+    color: #4a4a4a; /* Dark gray color for the icon */
+    font-size: 5rem; /* Adjust size to fit within the square */
+  }
+
+  .branding-overlay {
+    width: 100%;
+    background-color: #5f4dea; /* Purple background */
+    color: #fff;
+    padding: 0.5rem 0; /* Adjust padding to be more compact */
+    text-align: center;
+    font-size: 0.8rem; /* Smaller font size for branding text */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .branding-overlay .fa-circle-nodes {
+    color: #fff !important; /* Ensure the icon in the branding is white */
+    margin-right: 0.25rem; /* Smaller margin for compact look */
+    font-size: 0.75rem; /* Make the branding icon smaller */
+  }
+</style>
+
+<section style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+  <div class="folio-logo-container">
+    <div class="folio-icon">
+      <i class="fa-solid fa-book-bookmark"></i>
+    </div>
+    <div class="branding-overlay">
+      <i class="fa-solid fa-circle-nodes"></i>
+      <span>SUNYA</span>
+    </div>
+  </div>
+</section>
