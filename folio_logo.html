@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Folio Logo
-permalink: /folio_logo/
+title: Folio Adaptive Icons
+permalink: /folio_icon/
 ---
 
 <style>
-  .folio-logo-container {
+  /* Base styles for all logo containers */
+  .folio-logo-base {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Pushes content to top and bottom */
@@ -16,6 +17,7 @@ permalink: /folio_logo/
     overflow: hidden;
     border: 1px solid #ededed; /* Optional: add a border to visualize the square */
     box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.02); /* Matches existing card shadow subtly */
+    margin: 20px; /* Add some space between icons for better visual separation */
   }
 
   .folio-icon {
@@ -41,10 +43,58 @@ permalink: /folio_logo/
     margin-right: 0.25rem; /* Smaller margin for compact look */
     font-size: 0.75rem; /* Make the branding icon smaller */
   }
+
+  /* Specific shape styles for adaptive icons */
+  .folio-logo-square {
+    border-radius: 0; /* Explicitly square */
+  }
+
+  .folio-logo-circle {
+    border-radius: 50%; /* Circular shape */
+  }
+
+  .folio-logo-squircle {
+    border-radius: 30%; /* Common squircle value for a smooth, rounded square */
+  }
+
+  .folio-logo-samsung {
+    /* A more complex border-radius to approximate Samsung's "teardrop" or superellipse shape */
+    border-radius: 35% 65% 75% 25% / 25% 75% 65% 35%;
+  }
 </style>
 
-<section style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
-  <div class="folio-logo-container">
+<section style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;">
+  <div class="folio-logo-base folio-logo-square">
+    <div class="folio-icon">
+      <i class="fa-solid fa-book-bookmark"></i>
+    </div>
+    <div class="branding-overlay">
+      <i class="fa-solid fa-circle-nodes"></i>
+      <span>SUNYA</span>
+    </div>
+  </div>
+
+  <div class="folio-logo-base folio-logo-circle">
+    <div class="folio-icon">
+      <i class="fa-solid fa-book-bookmark"></i>
+    </div>
+    <div class="branding-overlay">
+      <i class="fa-solid fa-circle-nodes"></i>
+      <span>SUNYA</span>
+    </div>
+  </div>
+
+  <div class="folio-logo-base folio-logo-squircle">
+    <div class="folio-icon">
+      <i class="fa-solid fa-book-bookmark"></i>
+    </div>
+    <div class="branding-overlay">
+      <i class="fa-solid fa-circle-nodes"></i>
+      <span>SUNYA</span>
+    </div>
+  </div>
+
+  <div class="folio-logo-base folio-logo-samsung">
     <div class="folio-icon">
       <i class="fa-solid fa-book-bookmark"></i>
     </div>
