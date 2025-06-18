@@ -3,30 +3,32 @@ layout: default
 ---
 
 <section class="hero is-fullheight">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <p class="title is-1 has-text-white hero-title">
-                Bring Order to Your Digital Universe
-            </p>
-            <p class="subtitle is-3 has-text-light mt-4 hero-subtitle">
-              {{ site.name }} provides the tools to manage your constellation of data.<br>
-              <br>
-              <a href="/pricing/personal" class="button is-link is-rounded is-size-4 mt-5">
-                Pricing
-              </a>
-              <a href="/products" class="button is-info is-rounded is-size-4 mt-5">
-                Choose a Product
-              </a>
-              <a href="/signup" class="button is-primary is-rounded is-size-4 mt-5">
-                Sign Up
-              </a>
-              <br>
-              <span class="is-size-6">
-                {{ site.cancel_policy }}
-              </a>
-            </p>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title is-1 has-text-white hero-title">
+        Bring Order to Your Digital Universe
+      </p>
+      <div class="subtitle is-3 has-text-light mt-4 hero-subtitle">
+        <p>{{ site.name }} provides the tools to manage your constellation of data.</p>
+
+        <div class="buttons is-centered hero-buttons">
+          <a href="/pricing/personal" class="button is-link is-rounded is-size-4">
+            Pricing
+          </a>
+          <a href="/products" class="button is-info is-rounded is-size-4">
+            Choose a Product
+          </a>
+          <a href="/signup" class="button is-primary is-rounded is-size-4">
+            Sign Up
+          </a>
         </div>
+
+        <span class="is-size-6">
+          {{ site.cancel_policy }}
+        </span>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="section is-medium" id="products">

@@ -26,6 +26,10 @@
   animation-fill-mode: backwards;
 }
 
+.hero-buttons {
+  margin-top: 2.5rem;
+}
+
 /* Product card styling */
 .product-card {
   display: flex;
