@@ -8,6 +8,9 @@ gtag_id: G-K7180BMVP5
 cancel_policy: Cancel within 30 days and get your money back, no questions asked
 preorder_cancel_policy: Cancel your preorder anytime and get your money back, no questions asked
 
+plugins:
+  - jekyll-sitemap # keep this last
+
 products:
   folio:
     yearly_price_usd: 12
