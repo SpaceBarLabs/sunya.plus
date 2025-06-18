@@ -9,6 +9,7 @@ cancel_policy: Cancel within 30 days and get your money back, no questions asked
 preorder_cancel_policy: Cancel your preorder anytime and get your money back, no questions asked
 
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap # keep this last
 
 products:
