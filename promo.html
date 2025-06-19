@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunya Promotion at Yotopia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
-            font-family: 'Nunito Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             color: #000;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #fff;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
         }
         .container {
             max-width: 800px;
@@ -29,15 +30,17 @@
         }
         .header .logo {
             font-size: 2.5rem;
-            font-weight: bold;
+            font-weight: 700;
             color: #000;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
         .logo .fa-circle-nodes {
             margin-right: 10px;
         }
         .promo-title {
             font-size: 2rem;
-            font-weight: bold;
+            font-weight: 700;
             margin-top: 10px;
             text-transform: uppercase;
         }
@@ -50,12 +53,13 @@
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
+            margin-top: 30px;
         }
         .product {
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 20px;
-            width: calc(50% - 40px);
+            width: calc(50% - 42px);
             box-sizing: border-box;
             text-align: center;
         }
@@ -66,8 +70,10 @@
         }
         .product h3 {
             font-size: 1.5rem;
+            font-weight: 700;
             margin-bottom: 10px;
             color: #000;
+             text-transform: uppercase;
         }
         .product p {
             font-size: 1rem;
@@ -82,7 +88,7 @@
         }
         .coupon-code {
             font-size: 2.5rem;
-            font-weight: bold;
+            font-weight: 700;
             color: #000;
             background-color: #fff;
             padding: 10px 20px;
@@ -94,6 +100,7 @@
             font-size: 1.8rem;
             margin-top: 0;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         .qr-section {
             text-align: center;
@@ -102,7 +109,6 @@
         .qr-section img {
             width: 150px;
             height: 150px;
-            filter: grayscale(100%);
         }
          .footer {
             text-align: center;
@@ -112,22 +118,13 @@
             font-size: 0.9rem;
             color: #555;
         }
-
-        @media print {
-            body {
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">
-                <i class="fa-solid fa-circle-nodes"></i>Sunya
-            </div>
-            <h1 class="promo-title">A Special Offer for Yotopia!</h1>
+            <h1 class="logo"><i class="fa-solid fa-circle-nodes"></i> Sunya</h1>
+            <h2 class="promo-title">A Special Offer for Yotopia!</h2>
             <p class="promo-subtitle">Bring order to your digital universe.</p>
         </div>
 
@@ -145,12 +142,12 @@
             <div class="product">
                 <div class="product-icon"><i class="fa-solid fa-chart-line"></i></div>
                 <h3>Analytics</h3>
-                <p>Powerful, privacy-focused web and app analytics. Understand your audience without compromising their data.</p>
+                <p>Powerful, privacy-focused web analytics. Understand your visitors without compromising their data.</p>
             </div>
             <div class="product">
                 <div class="product-icon"><i class="fa-solid fa-link"></i></div>
                 <h3>Links</h3>
-                <p>Create and manage short links with detailed click-through analytics. The perfect tool for your marketing campaigns.</p>
+                <p>Create and manage short links with detailed click-through analytics for your marketing campaigns.</p>
             </div>
         </div>
 
