@@ -42,7 +42,6 @@
             font-size: 2rem;
             font-weight: 700;
             margin-top: 10px;
-            text-transform: uppercase;
         }
         .promo-subtitle {
             font-size: 1.2rem;
@@ -118,14 +117,21 @@
             font-size: 0.9rem;
             color: #555;
         }
+
+        @media print {
+            body {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1 class="logo"><i class="fa-solid fa-circle-nodes"></i> Sunya</h1>
-            <h2 class="promo-title">A Special Offer for Yotopia!</h2>
-            <p class="promo-subtitle">Bring order to your digital universe.</p>
+            <h2 class="promo-title">A Sweet Deal from Sunya!</h2>
+            <p class="promo-subtitle">Craft the perfect swirl of digital goodness.</p>
         </div>
 
         <div class="products">
@@ -139,27 +145,19 @@
                 <h3>Folio</h3>
                 <p>Your space for focused reading. Save articles and videos for focused, distraction-free enjoyment.</p>
             </div>
-            <div class="product">
-                <div class="product-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>Analytics</h3>
-                <p>Powerful, privacy-focused web analytics. Understand your visitors without compromising their data.</p>
-            </div>
-            <div class="product">
-                <div class="product-icon"><i class="fa-solid fa-link"></i></div>
-                <h3>Links</h3>
-                <p>Create and manage short links with detailed click-through analytics for your marketing campaigns.</p>
-            </div>
         </div>
 
         <div class="coupon-section">
             <h2>Get $2 Off Any Plan!</h2>
             <p>Use the coupon code below at checkout.</p>
             <div class="coupon-code">YOTOPIA</div>
+            <p style="margin-top: 15px;">Cancel within 30 days and get your money back, no questions asked.</p>
         </div>
 
         <div class="qr-section">
             <h3>Scan to learn more and sign up!</h3>
             <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://sunya.plus&size=150x150" alt="QR code for sunya.plus">
+            <p>sunya.plus</p>
         </div>
 
         <div class="footer">
